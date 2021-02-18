@@ -1,0 +1,170 @@
+body {
+    background-image: url("assets/images/background.jpg");
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+
+#page {
+    height: 100%;
+    text-align: center;
+}
+
+
+#top {
+    height: 10%;
+}
+
+
+h1 {
+    margin-top: 0%;
+    font-family: headlineFont;
+}
+
+
+@font-face {
+    font-family: headlineFont;
+    src: url("assets/fonts/headlineFont.ttf");
+    font-weight: bolder;
+}
+
+
+#middle {
+    height: 200px;
+    background-image: url("assets/images/middle.jpg");
+    width: 750px;
+    font-size: medium;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: auto;
+}
+
+
+#middleTable {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+}
+
+
+#descriptionBox {
+    background: transparent;
+    position: relative;
+    font-family: myFirtFont;
+    height: 50%;
+    width: 85%;
+    left: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+
+#dateBox {
+    background: transparent;
+    position: relative;
+    left: -7%;
+    border-color: black;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+
+#timeBox {
+    background: transparent;
+    position: relative;
+    left: -6%;
+    border-color: black;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.btn {
+    box-shadow: 10px 10px 5px gray;
+}
+
+
+
+#bottom {
+    height: 60%;
+    top: 30px;
+    left: 20px;
+}
+
+
+.container {
+    float: left;
+    text-align: left;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    left: 85px;
+    background: url("assets/images/notes.png");
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    display: inline-block;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.xButton {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 25px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    display: none;
+    background-image: url("assets/images/xButton.svg");
+    background-repeat: no-repeat;
+}
+
+
+ .container:hover .xButton{
+    display: block;
+}  
+
+
+.descriptionP {
+    position: relative;
+    background: transparent;
+    border: none;
+    height: 250px;
+    width: 240px;
+    top: 50px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+
+.dateP {
+      position: absolute;
+      top: 300px;
+}
+
+
+.timeP {
+      position: absolute;
+      top: 340px;
+}
